@@ -4,22 +4,14 @@
     @include box-degrade($gradient);
     text-align: center;
     color: white;
-    padding: 10px;
+    padding: 15px 20px;
     border: none;
     margin-top: 15px;
     margin-bottom: 15px;
     transform: scale(1);
     transition: transform 400ms;
     &:hover{
-        transform: scale(1.15);
+        transform: scale(1.10);
         @include hoveropacity 
     }
 }
-
-/* BTN COMMANDER MENU*/
-
-.btn_commande{
-      padding: 15px 40px;
-      font-size: 20px;
-}
-  

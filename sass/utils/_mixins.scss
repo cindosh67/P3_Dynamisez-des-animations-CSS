@@ -1,6 +1,5 @@
 @mixin cursor ($color:$color-black) { 
   cursor: pointer;
-  width: 100%;
   text-decoration: none;
   color: $color-black;   
 }
