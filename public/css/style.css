@@ -557,7 +557,13 @@ form input::placeholder {
   opacity: 0;
   animation: delay-opacity 0.6s linear 0.8s forwards;
 }
-
+.assiette__prix {
+  width: 45px;
+  padding-bottom: 15px;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+}
 .assiette__texte {
   padding: 15px;
   overflow: hidden;
@@ -578,14 +584,6 @@ form input::placeholder {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.assiette__prix {
-  width: 45px;
-  padding-bottom: 15px;
-  display: flex;
-  align-items: flex-end;
-  text-align: center;
 }
 
 .assiette--valide {

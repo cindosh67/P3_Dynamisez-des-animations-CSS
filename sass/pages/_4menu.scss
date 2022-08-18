@@ -60,35 +60,36 @@
         opacity: 0;
         animation: delay-opacity 0.6s linear 0.8s forwards;
     }
-}
-.assiette__texte{
-    padding: 15px;
-    overflow: hidden;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    &--un{
-        font-weight: 400;
-        margin: 0;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+    &__prix{
+        width: 45px;
+        padding-bottom: 15px;
+        display: flex;
+        align-items: flex-end;
+        text-align: center;
     }
-    &--deux{
-        font-weight: 100;
-        margin: 0;
-        white-space: nowrap;
+    &__texte{
+        padding: 15px;
         overflow: hidden;
-        text-overflow: ellipsis;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        &--un{
+            font-weight: 400;
+            margin: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        &--deux{
+            font-weight: 100;
+            margin: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
     }
 }
-.assiette__prix{
-    width: 45px;
-    padding-bottom: 15px;
-    display: flex;
-    align-items: flex-end;
-    text-align: center;
-}
+
 .assiette--valide{
     display:flex;
     flex: 0;
