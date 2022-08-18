@@ -12,7 +12,7 @@
 }
 
 /*bloc ENTREES/PLATS/DESSERTS*/
-.all-choix{
+.menu__repas--allchoix{
     @include tablette{
         @include all-choix;
     }

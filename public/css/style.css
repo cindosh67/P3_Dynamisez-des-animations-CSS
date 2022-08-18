@@ -503,13 +503,13 @@ form input::placeholder {
 
 /*bloc ENTREES/PLATS/DESSERTS*/
 @media screen and (min-width: 769px) {
-  .all-choix {
+  .menu__repas--allchoix {
     display: flex;
     flex-direction: row;
   }
 }
 @media screen and (min-width: 992px) {
-  .all-choix {
+  .menu__repas--allchoix {
     flex-direction: column;
   }
 }
