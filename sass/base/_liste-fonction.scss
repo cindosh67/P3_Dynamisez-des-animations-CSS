@@ -1,0 +1,42 @@
+.explication{
+    font-weight: 400;
+    padding: 0;
+    ul{
+      padding: 0px;
+      @include tablette{
+        display: flex;
+        justify-content: space-evenly ;
+      }
+    }
+    li{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      line-height: 32px;
+      margin: 15px;
+      padding: 15px;
+      @include box-shadow( $background-grey);
+      @include cursor;
+      width: auto;
+      &:hover{
+        @include hoverdark($color: $color-secondary,);
+        i{
+          color: $color-secondary;
+          @include hover-icone($color: $color-secondary);
+        }
+      }
+    }
+    & p{
+      position: relative;
+      right: 28px;
+      border-radius: 50%;
+      background-color: $color-secondary;
+      color: white;
+      padding: 1px 11px;
+    }
+    & i{
+      color: gray;
+      background: $background-grey;
+      margin-right: 20px;
+    }
+  }

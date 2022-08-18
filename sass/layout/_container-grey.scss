@@ -1,0 +1,16 @@
+/*ACCUEIL*/
+.container__fonction-gris{
+    background: $background-grey ;
+    padding-top: 15px;
+}
+/*PAGE MENU RESTAU*/
+.container__fonction-gris--menu{ 
+    padding: 10px 30px;
+    position: relative;
+    width: 100%;
+    @include box-carte-resto;
+    & h2{
+        @include font-titre;
+        font-size: 18px;
+    }
+}

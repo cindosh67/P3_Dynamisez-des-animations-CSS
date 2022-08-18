@@ -1,0 +1,53 @@
+.all-card{
+    @include desktop{
+      display: flex
+    }
+  }
+  .bloc-card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    @include box-shadow($background-white);
+    min-height: 150px;
+    height: 300px;
+    margin-bottom: 30px;
+    @include desktop{
+      margin: 30px;
+      width: 100%
+    }
+    & a{
+      @include cursor;
+      height: 300px;
+    }
+    & .bloc-card--nouveau{
+      position: absolute;
+      right: 25px;
+      top: 20px;
+      padding: 3px;
+      background-color: $color-tertiary;
+      color: darken($color: $color-tertiary, $amount: 40%);
+    }
+  }
+  .image_responsive{
+      border-radius: 30px 30px 0px 0px;
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+  .bloc-container{
+    color: black;
+    display: flex;
+    align-items: center;
+    & .bloc-content{
+      margin: 10px;
+      padding: 5px;
+    }
+    & h4{
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+    & p{
+      margin-top: 0px;
+      font-weight: 100;
+    }
+  }

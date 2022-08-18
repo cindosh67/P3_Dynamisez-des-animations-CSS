@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="public/css/style.css">
+    <link rel="stylesheet" type="text/css" href="public/css/normalize.css" />
+    <script src="https://kit.fontawesome.com/1707f5cf1c.js" crossorigin="anonymous"></script>
+    <title>ohmyfood</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>Ohmyfood</h1>
+        </div>
+        <a href="./index.html" class="retour-index">
+            <i class="fa-solid fa-arrow-left fleche"></i>
+        </a>
+    </header>
+    <div class="bandeau">
+        <img src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="photo" class="image_responsive">
+    </div>
+    <!--nom restau+coeur -->
+    <section class="container__fonction container__fonction-gris container__fonction-gris--menu">
+        <div class="bloc-container">
+            <div class="bloc-content__menu">
+                <h2> La palette du goût</h2>
+            </div>
+        </div>
+        <input type="checkbox" class="bloc-card--selection" name="aime" id="aime_La_palette_du_gout">
+        <label for="aime_La_palette_du_gout" class="coeur coeur__menu">
+            <i class="far fa-heart coeur--vide"></i>
+            <span class='coeur__filtre'><i class="fa-solid fa-heart coeur__filtre--plein"></i></span>
+        </label>
+    </section>
+    <!--entrees plats desserts-->
+    <section class="container__fonction container__fonction-gris">
+        <div class="entre-plat">
+            <div class="menu">
+                <h3 class="menu__repas">ENTRÉES</h3>
+                <!--ENTREE UNE-->
+                <div class="menu__repas--choix">
+                    <input type="checkbox" name='menu_le_delice_des_sens' id='entree1' class='selection'>
+                    <label for='entree1' class='assiette assiette--un'>
+                        <span class="assiette__texte">
+                            <span class="assiette__texte--un">Tartare de thon</span>
+                            <span class="assiette__texte--deux">Assaisonné au yuzu</span>
+                        </span>
+                        <span class="assiette__prix">25€</span>
+                        <span class='assiette--valide'>
+                            <i class="fas fa-check-circle assiette--valide--icone"></i>
+                        </span>
+                    </label>
+                </div>
+                <!--ENTREE DEUX-->
+                <div class="menu__repas--choix">
+                    <input type="checkbox" name='menu_le_delice_des_sens' id='entree2' class='selection'>
+                    <label for='entree2' class='assiette assiette--un'>
+                        <span class="assiette__texte">
+                            <span class="assiette__texte--un">Bouchée de homard croustillant</span>
+                            <span class="assiette__texte--deux">Et sa farandole de petits légumes</span>
+                        </span>
+                        <span class="assiette__prix">35€</span>
+                        <span class='assiette--valide'>
+                            <i class="fas fa-check-circle assiette--valide--icone"></i>
+                        </span>
+                    </label>
+                </div>
+                <!--ENTREE TROIS-->
+                <div class="menu__repas--choix">
+                    <input type="checkbox" name='menu_le_delice_des_sens' id='entree3' class='selection'>
+                    <label for='entree3' class='assiette assiette--un'>
+                        <span class="assiette__texte">
+                            <span class="assiette__texte--un">Velouté de cèpes</span>
+                            <span class="assiette__texte--deux">Aux truffes</span>
+                        </span>
+                        <span class="assiette__prix">20€</span>
+                        <span class='assiette--valide'>
+                            <i class="fas fa-check-circle assiette--valide--icone"></i>
+                        </span>
+                    </label>
+                </div>
+            </div>
+            <div class="menu_p">
+                <p class="menu__repas">PLATS</p>
+                <!--PLAT UN-->
+                <div class="menu__repas--choix">
+                    <input type="checkbox" name='menu_le_delice_des_sens' id='repas1' class='selection'>
+                    <label for='repas1' class='assiette assiette--un'>
+                        <span class="assiette__texte">
+                            <span class="assiette__texte--un">Poulet rôti aux herbes de Provence</span>
+                            <span class="assiette__texte--deux">Et sa crème de truffe</span>
+                        </span>
+                        <span class="assiette__prix">40€</span>
+                        <span class='assiette--valide'>
+                            <i class="fas fa-check-circle assiette--valide--icone"></i>
+                        </span>
+                    </label>
+                </div>
+                <!--PLAT DEUX-->
+                <div class="menu__repas--choix">
+                    <input type="checkbox" name='menu_le_delice_des_sens' id='plat2' class='selection'>
+                    <label for='plat2' class='assiette assiette--un'>
+                        <span class="assiette__texte">
+                            <span class="assiette__texte--un">Langouste rôtie</span>
+                            <span class="assiette__texte--deux">Et ses légumes de saison</span>
+                        </span>
+                        <span class="assiette__prix">35€</span>
+                        <span class='assiette--valide'>
+                            <i class="fas fa-check-circle assiette--valide--icone"></i>
+                        </span>
+                    </label>
+                </div>
+                <!--PLAT TROIS-->
+                <div class="menu__repas--choix">
+                    <input type="checkbox" name='menu_le_delice_des_sens' id='plat3' class='selection'>
+                    <label for='plat3' class='assiette assiette--un'>
+                        <span class="assiette__texte">
+                            <span class="assiette__texte--un">Côte de boeuf Angus</span>
+                            <span class="assiette__texte--deux">Et sa purée de panais</span>
+                        </span>
+                        <span class="assiette__prix">44€</span>
+                        <span class='assiette--valide'>
+                            <i class="fas fa-check-circle assiette--valide--icone"></i>
+                        </span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <!--DESSERTS-->
+        <div class="menu_d">
+            <p class="menu__repas">DESSERTS</p>
+            <!--DESSERT UN-->
+            <div class="menu__repas--choix">
+                <input type="checkbox" name='menu_le_delice_des_sens' id='dessert1' class='selection'>
+                <label for='dessert1' class='assiette assiette--un'>
+                    <span class="assiette__texte">
+                        <span class="assiette__texte--un">Farandole de desserts</span>
+                        <span class="assiette__texte--deux">Du chef</span>
+                    </span>
+                    <span class="assiette__prix">18€</span>
+                    <span class='assiette--valide'>
+                        <i class="fas fa-check-circle assiette--valide--icone"></i>
+                    </span>
+                </label>
+            </div>
+            <!--DESSERT DEUX-->
+            <div class="menu__repas--choix">
+                <input type="checkbox" name='menu_le_delice_des_sens' id='dessert2' class='selection'>
+                <label for='dessert2' class='assiette assiette--un'>
+                    <span class="assiette__texte">
+                        <span class="assiette__texte--un">Crème brulée</span>
+                        <span class="assiette__texte--deux">Revisitée</span>
+                    </span>
+                    <span class="assiette__prix">22€</span>
+                    <span class='assiette--valide'>
+                        <i class="fas fa-check-circle assiette--valide--icone"></i>
+                    </span>
+                </label>
+            </div>
+            <!--DESSERT TROIS-->
+            <div class="menu__repas--choix">
+                <input type="checkbox" name='menu_le_delice_des_sens' id='dessert3' class='selection'>
+                <label for='dessert3' class='assiette assiette--un'>
+                    <span class="assiette__texte">
+                        <span class="assiette__texte--un">Tiramisu</span>
+                        <span class="assiette__texte--deux">À la noisette</span>
+                    </span>
+                    <span class="assiette__prix">23€</span>
+                    <span class='assiette--valide'>
+                        <i class="fas fa-check-circle assiette--valide--icone"></i>
+                    </span>
+                </label>
+            </div>
+        </div>
+        <div class="container container_btn">
+            <a href="#">
+                <div class="btn btn_commande">Commander</div>
+            </a>
+        </div>
+    </section>
+    <footer>
+        <span>ohmyfood</span>
+        <ul>
+            <li> <i class="fa-solid fa-utensils"></i> Proposer un restaurant </li>
+            <li> <i class="fa-solid fa-handshake-angle"></i> Devenir partenaire </li>
+            <li> Mention légales </li>
+            <li> <a href="mailto:hello@openclassrooms.com"> Contact </a></li>
+        </ul>
+    </footer>

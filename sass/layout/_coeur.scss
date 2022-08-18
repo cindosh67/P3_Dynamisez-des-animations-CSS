@@ -1,0 +1,105 @@
+/*animation coeur vide + plein*/
+@keyframes efface{
+    90%{opacity: 1;}
+    100%{opacity: 0;}
+  }
+  /* COEUR QUI BAT*/
+  @keyframes grandi-bat{
+    0%{
+      transform: scale(0);
+    }
+    33%{
+      transform: scale(1);
+    }
+    53%{
+      transform: scale(1.2);
+    }
+    58%{
+      transform: scale(1.4);
+    }
+    63%{
+      transform: scale(1.2);
+    }
+    68%{
+      transform: scale(1);
+    }
+    73%{
+      transform: scale(1);
+    }
+    78%{
+      transform: scale(1.2);
+    }
+    83%{
+      transform: scale(1.4);
+    }
+    88%{
+      transform: scale(1.2);
+    }
+    95%{
+      transform: scale(1);
+    }
+    100%{
+      transform: scale(1);
+    }
+  }
+  .bloc-card--selection{
+    display: none;
+    &:checked + .coeur .coeur--vide{
+      animation: efface 0.5s linear forwards;
+    }
+    &:checked + .coeur .coeur__filtre--plein{
+      opacity: 1;
+      z-index: 1;
+      animation: grandi-bat 1.8s linear forwards;
+    }
+    &:hover + .coeur .coeur--vide{
+      animation: efface 0.5s linear forwards;
+    }
+    &:hover + .coeur .coeur__filtre--plein{
+      z-index: 1;
+      opacity: 1;
+      animation: grandi-bat 1.8s linear forwards;
+    }
+  }
+  /* COEUR PAGE ACCUEIL*/
+  .coeur{
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    &:hover{
+        cursor:grab;
+    } /* coeur vide */
+    &--vide{
+      padding: 13px 12.5px 12px 12.8px;
+      font-size: 20px;
+      &:hover{
+        background: linear-gradient( $color-primary , $color-secondary );
+      }
+    } 
+    /* BOUM coeur plein */
+    &__filtre{
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      /* coeur plein */
+      &--plein{
+        font-size: 20px; 
+        padding: 13px 12.5px 12px 12.8px;
+        transform-origin: 50% 50%;
+        transform: scale(0);
+        background-clip: text;
+        color: transparent;
+        opacity: 0;
+        background: linear-gradient( $color-primary , $color-secondary );
+        -webkit-background-clip: text;
+        
+      }
+    }
+  }
+
+  /* COEUR MENU */
+  .coeur__menu  {
+    position: absolute;
+    right: 18px;
+    top: 16px;
+  }

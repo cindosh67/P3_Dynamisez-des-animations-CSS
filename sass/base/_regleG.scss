@@ -1,0 +1,23 @@
+/* box-sizing*/
+
+.box {
+  box-sizing: border-box; /* Opera/IE 8+ */
+/* box-sizing est appliqué seulement à cette classe */
+}
+
+* {
+box-sizing: border-box;
+/* box-sizing est appliqué à tous les éléments */
+}
+body{
+  margin: 0;
+  background: white;
+  font-size: 18px;
+  font-family: 'Roboto', sans empattement, sans-serif ;
+  color: $color-black;
+}
+a{
+  text-decoration: none;
+}
+    
+     

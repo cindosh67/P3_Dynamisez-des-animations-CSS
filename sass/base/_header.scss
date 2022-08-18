@@ -1,0 +1,24 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    &__localisation{
+        background-color: #eaeaea;
+    box-shadow: inset 0px 5px 12px -10px;
+    padding: 10px 0px;
+    }
+  }
+.logo h1{
+  @include font-titre;
+   font-size: 25px;
+}
+.retour-index {
+  position: absolute;
+  top: 14px;
+  left: 2%;
+  font-size: 30px;
+  display: block;
+   @include cursor;
+   width: auto;
+  }

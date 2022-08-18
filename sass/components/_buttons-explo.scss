@@ -1,0 +1,27 @@
+/* Btn explorer ACCUEIL */
+.btn{
+    @include cursor;
+    @include box-degrade($gradient);
+    text-align: center;
+    color: white;
+    padding: 10px;
+    border: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    transform: scale(1);
+    transition: transform 400ms;
+    &:hover{
+        transform: scale(1.15);
+        @include hoveropacity 
+    }
+}
+
+/* BTN COMMANDER MENU*/
+
+.container_btn{
+    padding: 0;
+    & .btn_commande{
+      padding: 15px 40px;
+      font-size: 20px;
+    }
+  }
