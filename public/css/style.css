@@ -60,7 +60,7 @@ a {
 .explication ul {
   padding: 0px;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .explication ul {
     display: flex;
     justify-content: space-evenly;
@@ -498,10 +498,12 @@ form input::placeholder {
 }
 
 /*bloc ENTREES/PLATS/DESSERTS*/
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .menu__repas--allchoix {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
 @media screen and (min-width: 992px) {
@@ -526,10 +528,10 @@ form input::placeholder {
 .menu__repas--choix {
   margin: 15px 0;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .menu__repas--choix {
     margin: 15px;
-    width: 30%;
+    width: 45%;
   }
 }
 @media screen and (min-width: 992px) {

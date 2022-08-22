@@ -56,8 +56,10 @@ border-radius: 30px;
 @mixin all-choix{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 @mixin menu-tablette{
   margin: 15px;
-  width: 30%;
+  width: 45%;
 }
