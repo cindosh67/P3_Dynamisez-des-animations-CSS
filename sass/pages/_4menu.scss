@@ -91,12 +91,9 @@
     transition: all 0.6s linear;
 }
 .assiette--valide{
-        width: 0px;
-        min-width: 0px;
-        height: 72px;
-        left: 1px; /* évite un escalier de l'animation */
-        transform-origin: 100% 50%;
-        transition: all 0.6s linear;
+    width: 0px;
+    min-width: 0px;
+    transition: all 0.6s linear;
     display:flex;
     flex: 0;
     justify-content: center;
